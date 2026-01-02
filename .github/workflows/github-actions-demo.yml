@@ -1,6 +1,10 @@
 name: login to aws and install nginx
 
-on: ubuntu-latest
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
 
 env:
   SERVER_IP: 
