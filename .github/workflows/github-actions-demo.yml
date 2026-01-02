@@ -30,13 +30,17 @@ jobs:
         with:
           hosts: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
+          key: ${{ secret.SSH_KEY }}
           port: 22
           script: |
             sudo apt update
             sudo apt install -y nginx
             sudo systemctl enable --now nginx
             sudo systemctl status nginx
-            
+
+
+
+
           
           
 
