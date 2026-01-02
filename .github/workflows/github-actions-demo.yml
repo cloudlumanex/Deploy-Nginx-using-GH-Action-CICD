@@ -32,12 +32,12 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          request_pty: true
           script: |
             sudo apt update
             sudo apt install -y nginx
             sudo systemctl enable --now nginx
             sudo systemctl status nginx
+            sudo systemctl status nginx --no-pager
 
 
 
