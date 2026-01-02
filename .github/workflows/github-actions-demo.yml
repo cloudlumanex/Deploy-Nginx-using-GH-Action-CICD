@@ -38,6 +38,9 @@ jobs:
             sudo systemctl enable --now nginx
             sudo systemctl status nginx
             sudo systemctl status nginx --no-pager
+            sudo cp $GITHUB_WORKSPACE/index.html /var/www/html/index.html
+            sudo chown www-data:www-data /var/www/html/index.html
+            sudo systemctl restart nginx
 
 
 
