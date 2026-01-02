@@ -1,4 +1,4 @@
-name: log in to aws and install nginx
+name: login to aws and install nginx
 
 on:
   push:
