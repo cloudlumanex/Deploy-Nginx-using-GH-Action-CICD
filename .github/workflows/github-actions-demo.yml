@@ -28,9 +28,9 @@ jobs:
       - name: Deploy Nginx on Ubuntu server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          hosts: ${{ secrets.SERVER_IP }}
+          host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secret.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
             sudo apt update
