@@ -1,3 +1,3 @@
 # learn-github-action
 
-Deployed 
+Deployed nginx on ec2 using GH Action CICD
