@@ -1,10 +1,10 @@
-name: log into aws and install nginx
+name: log in to aws and install nginx
 
 on:
   push:
-    branches: main
+    branches: [main]
   pull_request:
-    branches: main
+    branches: [main]
 
 env:
   SERVER_IP: ${{ secrets.SERVER_IP }}
